@@ -109,7 +109,8 @@ export const PROJECTS_DATA = [
     description:
       "Simple responsive and dynamic portfolio website to showcase my projects, experiences, and skills.",
     technologies: ["Vite", "React", "Tailwind"],
-    github: "https://github.com/PushKaf/Portfolio"
+    github: "https://github.com/PushKaf/Portfolio",
+    website: "https://pkaf.vercel.app/"
   },
   // {
   //   title: "Portfolio Website (this one!)",

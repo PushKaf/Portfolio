@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
+    "accessibility": "^5.0.7",
     "framer-motion": "^11.2.0",
     "react": "^18.2.0",
-    "react-accessibility-package": "^1.0.0",
     "react-custom-scrollbars-2": "^4.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
