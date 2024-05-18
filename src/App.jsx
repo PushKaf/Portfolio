@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { Accessibility } from 'react-accessibility-package'
+import { Analytics } from "@vercel/analytics/react"
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         </div>
 
         <div className="container mx-auto px-8">
+          <Analytics />
           <Navbar />
           <Hero />
           {/* <About /> */}
