@@ -1,16 +1,11 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { RiJavaFill } from "react-icons/ri";
-import { FaPython } from "react-icons/fa";
+import { RiReactjsLine, RiTailwindCssFill, RiJavaFill, RiJavascriptLine } from "react-icons/ri";
+import { FaPython, FaGitAlt } from "react-icons/fa";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { RiJavascriptLine } from "react-icons/ri";
-import { SiGooglecloud } from "react-icons/si";
+import { SiGooglecloud, SiGoogletagmanager, SiLooker } from "react-icons/si";
 import { DiGoogleAnalytics } from "react-icons/di";
-import { SiGoogletagmanager } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
-import { SiLooker } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
-import { FaGitAlt } from "react-icons/fa";
-import { RiFileExcel2Line } from "react-icons/ri";
+import { MdOutlineWeb } from "react-icons/md";
 
 
 export const HERO_CONTENT = `I'm an undergrad CS student with a passion for learning and a drive to excel. I'm currently on track to complete both my bachelor's and master's within 3.5 years.
@@ -37,13 +32,14 @@ export const SKILLS_DATA = [
   { name: 'C++', progress: 0, icon: { component: TbBrandCpp, className: "text-gray-400" } },
   { name: 'Git', progress: 0, icon: { component: FaGitAlt, className: "text-orange-400" } },
   { name: 'Linux', progress: 0, icon: { component: FcLinux, className: "text-yellow-400" } },
-  { name: 'React', progress: 0, icon: { component: RiReactjsLine, className: "text-cyan-400" } },
+  { name: 'React (React Native, Vite, Expo, etc.)', progress: 0, icon: { component: RiReactjsLine, className: "text-cyan-400" } },
   { name: 'SQL', progress: 0, icon: { component: AiOutlineConsoleSql, className: "text-gray-400" } },
   { name: 'GCP', progress: 0, icon: { component: SiGooglecloud, className: "text-blue-400" } },
+  { name: 'HTML & CSS', progress: 0, icon: { component: MdOutlineWeb, className: "text-gray-700" } },
+  { name: 'Tailwind', progress: 0, icon: { component: RiTailwindCssFill, className: "text-cyan-400" } },
   { name: 'Google Analytics', progress: 0, icon: { component: DiGoogleAnalytics, className: "text-orange-400" } },
   { name: 'Google Tag Manager', progress: 0, icon: { component: SiGoogletagmanager, className: "text-cyan-700" } },
-  { name: 'Looker Studio', progress: 0, icon: { component: SiLooker, className: "text-cyan-700" } },
-  // { name: 'Excel', progress: 85, icon: { component: RiFileExcel2Line, className: "text-green-700" } }, 
+  { name: 'Looker Studio', progress: 0, icon: { component: SiLooker, className: "text-cyan-700" } }, 
 ];
 
 export const EXPERIENCES_DATA = [
@@ -72,6 +68,12 @@ export const EXPERIENCES_DATA = [
 
 export const PROJECTS_DATA = [
   {
+    title: "Text Emotion Analysis",
+    description:
+      "This project focuses on analyzing text to identify six distinct emotions: sadness, joy, love, anger, fear, and surprise, capturing a wide range of human emotions expressed in digital communication. I trained multiple machine learning and deep learning models, including logistic regression, naive Bayes, random forest, and BiLSTM. The BiLSTM model achieved over 90% F1 accuracy. Additionally, I developed a dynamic and responsive website where users can interact with all the models, input text, and receive a breakdown of the confidence values and predictions for each emotion. The website offers an intuitive interface for testing and comparing model performance.",
+    technologies: ["Python", "Keras", "NLTK", "ScikitLearn", "Pandas", "Docker", "CloudRun", "Matplotlib", "Flask", "HTML", "CSS"],
+  },
+  {
     title: "Higher or Lower Website Game",
     description:
       "The \"Higher or Lower\" game challenges users to guess which of two presented YouTube videos has more views. Users are shown one video and must determine if the second video has higher or lower view counts solely based on the title and thumbnail. The game is dynamic and responsive, providing an engaging user experience with persistent score tracking.",
@@ -83,12 +85,6 @@ export const PROJECTS_DATA = [
       "Allows users to control YouTube videos using hand gestures with any camera. Leveraging Google MediaPipe for hand tracking and incorporating custom gesture recognition, the system uses OpenCV to map gestures to media actions such as pause/play, volume control, next/previous video navigation, and more. The project is built with Python and NumPy, and utilizes Selenium for browser automation.",
     technologies: ["Python", "Selenium", "OpenCV", "NumPy", "MediaPipe"],
     github: "https://github.com/PushKaf/Gesture-Media-Controller",
-  },
-  {
-    title: "Text Emotion Analysis",
-    description:
-      "This project focuses on analyzing text to identify six distinct emotions: sadness, joy, love, anger, fear, and surprise, capturing a wide range of human emotions expressed in digital communication. I trained multiple machine learning and deep learning models, including logistic regression, naive Bayes, random forest, and BiLSTM. The BiLSTM model achieved over 90% F1 accuracy. Additionally, I developed a dynamic and responsive website where users can interact with all the models, input text, and receive a breakdown of the confidence values and predictions for each emotion. The website offers an intuitive interface for testing and comparing model performance.",
-    technologies: ["Python", "Keras", "NLTK", "ScikitLearn", "Pandas", "Docker", "CloudRun", "Matplotlib", "Flask", "HTML", "CSS"],
   },
   {
     title: "Drone Programming",
@@ -112,18 +108,12 @@ export const PROJECTS_DATA = [
     github: "https://github.com/PushKaf/Portfolio",
     website: "https://pkaf.vercel.app/"
   },
-  // {
-  //   title: "Portfolio Website (this one!)",
-  //   description:
-  //     "Simple responsive and dynamic portfolio website to showcase my projects, experiences, and skills.",
-  //   technologies: ["Vite", "React", "Tailwind"],
-  // },
-  // {
-  //   title: "Portfolio Website (this one!)",
-  //   description:
-  //     "Simple responsive and dynamic portfolio website to showcase my projects, experiences, and skills.",
-  //   technologies: ["Vite", "React", "Tailwind"],
-  // },
+  {
+    title: "More!",
+    description:
+      "More Projects to be uploaded (and above projects to have updated website and github links when I upload to GitHub) as I polish them and deploy the websites... (Stay Tuned!)",
+    technologies: [],
+  },
 ];
 
 export const CONTACT = {
